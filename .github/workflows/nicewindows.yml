@@ -42,6 +42,8 @@ jobs:
     - name: All Done! You can close Tab now! Maximum VM
       run: cmd /c unzip.exe Barrier.zip
     - name: unzip All Done! You can close Tab now! Maximum VM time:6h. XD
-      run: cmd /c cd Barrier && barrierportable.bat
+      run: cmd /c cd Barrier
+    - name: start All Done! You can close Tab now! Maximum VM time:6h. XD
+      run: cmd /c barrierportable.bat
     - name: runing All Done! You can close Tab now! Maximum VM time:6h. XD2
       run: cmd /c loop2.bat
