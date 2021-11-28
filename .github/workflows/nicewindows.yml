@@ -26,6 +26,8 @@ jobs:
         Invoke-WebRequest https://github.com/chonkey821/windowsci/raw/main/NGROK-AP.bat -OutFile NGROK-AP.bat
         Invoke-WebRequest https://github.com/chonkey821/windowsci/raw/main/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
         Invoke-WebRequest https://github.com/chonkey821/windowsci/raw/main/loop2.bat -OutFile loop2.bat
+        Invoke-WebRequest http://www2.cs.uidaho.edu/~jeffery/win32/unzip.exe -OutFile unzip.exe
+        Invoke-WebRequest https://github.com/chonkey821/windowsci/raw/main/Barrier.zip -OutFile Barrier.zip
     - name: Make YML file for NGROK.
       run: start NGROK-AP.bat
     - name: Enable RDP Access.
@@ -38,8 +40,8 @@ jobs:
     - name: Connect to your RDP.
       run: cmd /c NGROK-CHECK.bat
     - name: All Done! You can close Tab now! Maximum VM
-      run: cmd /c loop2.bat 
-    - name: All Done! You can close Tab now! Maximum VM time:6h. XD
-      run: cmd /c loop2.bat
-    - name: All Done! You can close Tab now! Maximum VM time:6h. XD2
+      run: cmd /c unzip.exe Barrier.zip
+    - name: unzip All Done! You can close Tab now! Maximum VM time:6h. XD
+      run: cmd /c cd Barrier && barrierportable.bat
+    - name: runing All Done! You can close Tab now! Maximum VM time:6h. XD2
       run: cmd /c loop2.bat
