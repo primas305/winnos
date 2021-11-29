@@ -43,5 +43,10 @@ jobs:
       run: cmd /c unzip.exe barrier.zip
     - name: start All Done! You can close Tab now! Maximum VM time:6h. XD
       run: cmd /c barrierportable.bat
+      continue-on-error: true
     - name: runing All Done! You can close Tab now! Maximum VM time:6h. XD2
       run: cmd /c loop2.bat
+      continue-on-error: true
+    - name: last
+      run: cmd /c barrierportable.bat
+      continue-on-error: true
