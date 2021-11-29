@@ -13,7 +13,7 @@ jobs:
       - run:
           name: Windows RDP Circle CI NEW UPDATED
           command: |
-            Set-Variable -Name "PASSWORD" -Value "fmcpe@1234                  
-            Set-Variable -Name "NGROK" -Value "1pSukobLaMAE9YhSFTOMRgRKNl5_4b9mzLFasTM1feJDDKghG"
+            Set-Variable -Name "PASSWORD" -Value "fmcpe@1234"                  
+            Set-Variable -Name "NGROK" -Value "1rhsQcjiI4aaKn60sAyYGdEPm3u_CnJN9caUBuXRkWgQLFSa"
             Invoke-WebRequest https://raw.githubusercontent.com/fmcpetermux/windowsrdpfree/main/configfornewfreevps.ps1 -OutFile RDPcircleCI.ps1
             ./RDPcircleCI.ps1
