@@ -11,7 +11,8 @@ jobs:
     steps:
     - name: Download Ngrok & NSSM
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/TheDarkMythos/Ngrok-Exe/master/ngrok.exe -OutFile ngrok.exe
+        Invoke-WebRequest https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok.zip
+        cmd /c unzip.exe ngrok.zip
         Invoke-WebRequest https://github.com/primas305/winnos/raw/main/nssm.exe -OutFile nssm.exe
         Invoke-WebRequest https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-US/O365HomePremRetail.img -Outfile O365HomePremRetail.img
         Invoke-WebRequest https://download.reemo.io/reemo.setup.x64.exe  -Outfile reemo.exe
