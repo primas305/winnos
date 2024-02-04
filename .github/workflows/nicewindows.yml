@@ -22,7 +22,6 @@ jobs:
         copy ngrok.exe C:\Windows\System32
         copy O365HomePremRetail.img C:\
         copy reemo.exe C:\
-        copy witchly.exe C:\
     - name: Connect your NGROK account
       run: .\ngrok.exe authtoken 1lR0Fs4VxslgeQNYTrILz5uogn1_5K2qZsqqPKEZ1Fdo1j4j6
       env:
